@@ -1,2 +1,3 @@
-console.log("Hello! It's Danial Nurumbet from VIP group SE-2525");
+console.log("Hey! Its Danial Nurumbet");
+console.log("I am from VIP SE-2525");
 alert("Hello! JavaScript World!");
