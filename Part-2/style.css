@@ -1,0 +1,36 @@
+body{
+    margin: 0 auto;
+}
+
+h2, p{
+    text-align: center;
+}
+
+.task-blocks{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #bcae12;
+}
+
+navbar a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: #bcae12;
+    border-radius: 5px;
+}
+
+.btn{
+    text-align: center;
+}
