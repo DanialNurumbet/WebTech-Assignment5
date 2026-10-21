@@ -38,3 +38,14 @@ navbar a{
     height: 75px;
     text-align: center;
 }
+
+.task {
+    text-align: center;
+}
+
+.operators{
+    display: flex;
+    margin-top: 8px;
+    justify-content: center;
+    gap: 4px;
+}
