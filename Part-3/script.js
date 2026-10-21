@@ -13,3 +13,10 @@ function mouseOut(){
     box.innerHTML = "NO! <br> YOU'RE OUT!";
 }
 box.addEventListener("mouseout", mouseOut);
+
+var key = document.getElementById("key");
+
+function pressed(){
+    document.getElementById("result").innerHTML = "You pressed: " + event.key;
+}
+key.addEventListener("keyup", pressed)
