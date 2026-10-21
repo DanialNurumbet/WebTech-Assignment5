@@ -1,0 +1,17 @@
+h2, p{
+    text-align: center;
+}
+
+navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+navbar a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    background-color: #bcae12;
+    border-radius: 5px;
+}
