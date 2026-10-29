@@ -1,10 +1,10 @@
 var tasks = [];
 
-document.getElementById("button-add-task").addEventListener("click", addTask);
+document.querySelector("#button-add-task").addEventListener("click", addTask);
 
 function addTask() {
-    var title = document.getElementById("title").value;
-    var description = document.getElementById("description").value;
+    var title = document.querySelector("#title").value;
+    var description = document.querySelector("#description").value;
 
     if (title == "" || description == "") {
         alert("Fill in all fields");
@@ -17,21 +17,21 @@ function addTask() {
         completed: false
     });
 
-    document.getElementById("title").value = "";
-    document.getElementById("description").value = "";
+    document.querySelector("#title").value = "";
+    document.querySelector("#description").value = "";
 
     showTasks();
 }
 
 function showTasks() {
-    var list = document.getElementById("task-list");
-    list.innerHTML = "";
+    var list = document.querySelector("#task-list");
+    list.textContent = "";
 
     for (var i = 0; i < tasks.length; i++) {
         var item = document.createElement("li");
 
         var title = document.createElement("span");
-        title.innerHTML = tasks[i].title;
+        title.textContent = tasks[i].title;
         title.className = "task-title";
 
         if (tasks[i].completed) {
@@ -39,15 +39,15 @@ function showTasks() {
         }
 
         var description = document.createElement("p");
-        description.innerHTML = tasks[i].description;
+        description.textContent = tasks[i].description;
         description.className = "task-description";
 
         var complete = document.createElement("button");
-        complete.innerHTML = "✓";
+        complete.textContent = "✓";
         complete.onclick = createComplete(i);
 
         var remove = document.createElement("button");
-        remove.innerHTML = "×";
+        remove.textContent = "×";
         remove.className = "delete";
         remove.onclick = createDelete(i);
 
