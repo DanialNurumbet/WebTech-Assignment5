@@ -1,22 +1,22 @@
 function changingText (){
-    document.getElementById("aitu-text").innerHTML = "Season 2 of Cyberpunk Edgerunners is out!!!"
+    document.querySelector("#aitu-text").textContent = "Season 2 of Cyberpunk Edgerunners is out!!!"
 }
-btn = document.getElementById("button-change")
+btn = document.querySelector("#button-change")
 btn.addEventListener("click", changingText);
 
 function changingBGcolor (){
-    document.getElementById("task-3-container").style.backgroundColor = "rgb(188, 188, 48)";
-    document.getElementById("task-3-container").style.color = "rgb(14, 14, 15)";
+    document.querySelector("#task-3-container").style.backgroundColor = "rgb(188, 188, 48)";
+    document.querySelector("#task-3-container").style.color = "rgb(14, 14, 15)";
 }
 
 function changingFontSize (){
-    document.getElementById("task-3-container").style.fontSize = "24px";
+    document.querySelector("#task-3-container").style.fontSize = "24px";
 }
 
-document.getElementById("button-bg-change").addEventListener("click", changingBGcolor);
-document.getElementById("button-font-change").addEventListener("click", changingFontSize);
+document.querySelector("#button-bg-change").addEventListener("click", changingBGcolor);
+document.querySelector("#button-font-change").addEventListener("click", changingFontSize);
 
-var list = document.getElementById("list");
+var list = document.querySelector("#list");
 
 function addItem(){
     var item = document.createElement("li");
@@ -24,10 +24,8 @@ function addItem(){
     list.appendChild(item);
 }
 function removeItem(){
-    if (list.lastElementChild){
-        list.removeChild(list.lastElementChild)
-    }
+    list.removeChild(list.lastElementChild)
 }
 
-document.getElementById("button-add").addEventListener("click", addItem)
-document.getElementById("button-remove").addEventListener("click", removeItem)
+document.querySelector("#button-add").addEventListener("click", addItem)
+document.querySelector("#button-remove").addEventListener("click", removeItem)
