@@ -17,7 +17,8 @@ box.addEventListener("mouseout", mouseOut);
 var key = document.querySelector("#key");
 
 function pressed(){
-    document.querySelector("#result").textContent = "You pressed: " + event.key;
+    var text = key.value;
+    document.querySelector("#result").textContent = "You typed: " + text;
 }
 key.addEventListener("keyup", pressed)
 
